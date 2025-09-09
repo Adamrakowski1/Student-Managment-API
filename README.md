@@ -56,7 +56,7 @@ mvn spring-boot:run
 
 The app will start at:  
 ```
-http://localhost:8080
+http://localhost:8080/api/v1/student
 ```
 
 ---
@@ -76,10 +76,10 @@ http://localhost:8080
 ## Example Request (from `generated-requests.http`)
 ```http
 ### Get all students
-GET http://localhost:8080/students
+GET http://localhost:8080/api/v1/student
 
 ### Create a new student
-POST http://localhost:8080/students
+POST http://localhost:8080/api/v1/student
 Content-Type: application/json
 
 {
@@ -106,8 +106,3 @@ flowchart TD
 - Integrate Swagger for API documentation  
 - Implement pagination and search  
 - Add authentication & authorization  
-
----
-
-## License
-This project is open source and available under the [MIT License](LICENSE).  
